@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   // title = 'project-setup';
-  loadedFeature = 'recipe';
-  onNevigate(feature: string) {
-    this.loadedFeature = feature;
-  }
+  // loadedFeature = 'recipe';
+  // onNevigate(feature: string) {
+  //   this.loadedFeature = feature;
+  // }
 }
