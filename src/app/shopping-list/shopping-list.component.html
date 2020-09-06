@@ -1,7 +1,19 @@
 <div class="row">
   <div class="col-md-10">
-    <app-shopping-edit></app-shopping-edit>
+    <app-shopping-edit
+      (ingredientAdded)="onIngredientAdded($event)"
+    ></app-shopping-edit>
     <hr />
-    <p>The list here</p>
+    <ul class="list-group">
+      <!-- <li class="list-group-item active">Text</li>
+        <li class="list-group-item disabled" aria-disabled="true">Disabled item</li> -->
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let ings of ingredients"
+      >
+        {{ ings.name }} ({{ ings.amount }})
+      </a>
+    </ul>
   </div>
 </div>
