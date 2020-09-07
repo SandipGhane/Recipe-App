@@ -31,11 +31,17 @@
           <!-- <button class="btn btn-success" type="button" (click)="onAddIngs()">
             Add
           </button> -->
-          <button class="btn btn-success" type="submit" [disabled]="!f.valid">
+          <button
+            class="btn btn-success"
+            style="margin-right: 5px"
+            type="submit"
+            [disabled]="!f.valid"
+          >
             {{ editMode ? "Update" : "Add" }}
           </button>
           <button
             class="btn btn-danger"
+            style="margin-right: 5px"
             *ngIf="editMode"
             type="button"
             (click)="onDelete()"
